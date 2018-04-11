@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pizzéria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style/bootstrap/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <header>
+        <h1 class="display-3">Gestion des Commandes</h1>
+    </header>
+
+    <form action="/action_page.php">
+        <pre>
+            Ajout d'une pizza
+            
+            Numéro      <input type="text" name="Libellé" value="">
+            Date        <input type="text" name="Référence" value="">
+            Livreur     <select>
+                            <option>ARMAND Lionel</option>
+                            <option>SPIDE ARTHUR</option>
+                            <option>JOURNEE MARGUERITE</option>
+                        </select>
+            Client      <select>
+                            <option>Sophie ARMANI</option>
+                            <option>LAURENT BERURIER</option>
+                            <option>SYLVAIN DENIS</option>
+                            <option>FERNIOT MICHELLE</option>
+                        </select>
+                        <input type="submit" value="Ajouter" class="btn btn-primary">
+        </pre>
+    </form>
+    <a href="ListerPizzas.html" class="btn btn-warning">Retour</a>
+    <a href="index.html" class="btn btn-warning">Accueil</a>
+</body>
+
+</html>
