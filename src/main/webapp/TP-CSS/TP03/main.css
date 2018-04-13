@@ -1,0 +1,41 @@
+.zero{
+    background-image:linear-gradient(blue, red);
+    width: 25%;
+    text-align: center;
+    padding: 5%;
+    margin-bottom: 10px;
+    color: white;
+    transition : width 15s;
+}
+.zero:hover{
+    width: 50%;
+
+}
+.neufdix{
+    background-image:linear-gradient(90deg,red, green);
+    width: 25%;
+    text-align: center;
+    padding: 5%;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.cent{
+    background-image:linear-gradient(180deg,red, yellow);
+    width: 25%;
+    text-align: center;
+    padding: 5%;
+    margin-bottom: 10px;
+    color: white;
+}
+
+
+.moins{
+    background-image:linear-gradient(-90deg,red, yellow);
+    width: 25%;
+    text-align: center;
+    padding: 5%;
+    margin-bottom: 10px;
+    color: white;
+}
+

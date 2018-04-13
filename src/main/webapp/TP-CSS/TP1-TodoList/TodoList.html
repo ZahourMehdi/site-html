@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <meta charset="utf8" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script type="text/javascript">
+        function loading() {
+            // Add feature
+            document.getElementById("addtodo").addEventListener('click', function (event) {
+                var text = document.getElementById("todotxt").value;
+                var listItem = document.createElement("li")
+                listItem.append(document.createTextNode(text))
+                // Remove action
+                listItem.addEventListener('click', function (event) {
+                    event.currentTarget.remove()
+                });
+                event.preventDefault()
+                document.getElementById("todolist").appendChild(listItem)
+            });
+
+        }
+    </script>
+</head>
+
+<body onload="loading()">
+    <div class="content">
+        <h1>TODO List</h1>
+        <ul id="todolist">
+            <li>mettre une couleur de fond</li>
+            <li>fixer la police</li>
+            <li>ajouter un espace au texte</li>
+            <li>mettre en place les arrondis</li>
+        </ul>
+        <input id="todotxt" type="text" value ="mettre en place les arrondis"/>
+        <button id="addtodo" type="button">Ajouter</button>
+    </div>
+</body>
+
+</html>
